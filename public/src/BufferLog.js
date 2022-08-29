@@ -129,7 +129,7 @@ class BufferLog extends LitElement {
       ${this.logs.map(e=>{
         var msg = 
             e.nick.trim().indexOf("ljcucc") > -1 ? html`<div class="line me">${e.message}</div>`: null || 
-            e.nick.trim().indexOf("fluffychan") > -1 ? html`<div class="line me">${e.message}</div>`: null || 
+            // e.nick.trim().indexOf("fluffychan") > -1 ? html`<div class="line me">${e.message}</div>`: null || 
 
             (e.tags_array.indexOf("irc_notice") > -1 || 
              e.tags_array.indexOf('irc_join')>-1 ||
